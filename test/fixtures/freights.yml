@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  value_freight: 1.5
+  date: MyString
+  source_freight: MyString
+  destiny: MyString
+  value_left: 1.5
+
+two:
+  value_freight: 1.5
+  date: MyString
+  source_freight: MyString
+  destiny: MyString
+  value_left: 1.5

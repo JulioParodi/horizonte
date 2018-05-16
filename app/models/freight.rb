@@ -1,0 +1,4 @@
+class Freight < ApplicationRecord
+
+  
+end

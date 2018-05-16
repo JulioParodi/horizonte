@@ -1,0 +1,30 @@
+<h1> Frete nº <%= @freight.id%> </h1>
+
+<p>
+  <strong>DATA:</strong>
+  <%= @freight.date_freight %>
+</p>
+
+<p>
+  <strong>VALOR FRETE:</strong>
+  <%= @freight.value_freight %>
+</p>
+
+<p>
+  <strong>VALOR RESTANTE:</strong>
+  <%= @freight.value_left %>
+</p>
+
+<p>
+  <strong>ORIGEM:</strong>
+  <%= @freight.source_freight %>
+</p>
+
+<p>
+  <strong>DESTINO:</strong>
+  <%= @freight.destiny_freight %>
+</p>
+
+<br/>
+<%= link_to 'Novo frete |', :back %>
+<%= link_to '| Fretes', freights_url %>
