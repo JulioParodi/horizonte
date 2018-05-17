@@ -26,5 +26,9 @@
 </p>
 
 <br/>
-<%= link_to 'Novo frete |', :back %>
-<%= link_to '| Fretes', freights_url %>
+<%= link_to '| Novo frete |', :back %>
+<%= link_to '| Fretes |', freights_url %>
+<%= link_to '| Editar frete |', edit_freight_path(@freight) %>
+<%= link_to 'Destroy', freight_path(@freight),
+        method: :delete,
+        data: { confirm: 'Tem certeza?' } %>

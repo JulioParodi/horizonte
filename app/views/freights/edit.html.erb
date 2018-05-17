@@ -1,0 +1,38 @@
+<h1>Editando frete <%= @freight.id %> </h1>
+
+
+<%=  form_for @freight do |form| %>
+
+<p>
+ <% form.label :date_freight %> <strong> Data <strong><br>
+ <%= form.date_field :date_freight %>
+</p>
+
+
+ <p>
+   <% form.label :value_freight %> <strong> Valor do frete <strong> <br>
+   <%= form.number_field :value_freight %>
+ </p>
+
+ <p>
+   <% form.label :value_left %> <strong> Valor restante <strong><br>
+   <%= form.number_field :value_left %>
+ </p>
+
+ <p>
+   <% form.label :source_freight %> <strong> Origem do frete <strong> <br>
+   <%= form.text_field :source_freight %>
+ </p>
+
+ <p>
+   <% form.label :destiny_freight %> <strong> Destino do frete <strong><br>
+   <%= form.text_field :destiny_freight %>
+ </p>
+
+
+ <p>
+   <%= form.submit %>
+ </p>
+<% end %>
+<br/>
+<%= link_to 'Voltar', :back %>

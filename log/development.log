@@ -5525,3 +5525,704 @@ Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.3ms)
   [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from require at /home/lamind-admin/Documents/julio/horizonte/bin/rails:9)
+  [1m[35m (89.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (74.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFreights (20180516165350)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "freights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "value_freight" float, "value_left" float, "date_freight" date, "source_freight" varchar, "destiny_freight" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180516165350"]]
+  [1m[35m (76.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-17 11:14:21.794566"], ["updated_at", "2018-05-17 11:14:21.794566"]]
+  [1m[35m (57.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 127.0.0.1 at 2018-05-17 08:14:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 401ms (Views: 381.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-17 08:14:45 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 107ms (Views: 87.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-17 08:15:14 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-17 08:33:40 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 42ms (Views: 28.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/freights" for 127.0.0.1 at 2018-05-17 08:34:29 -0300
+Processing by FreightsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tsmGjFfkpQNePb6DVYELXz6xvY0yI8Pq2rheTeoHSjfZS/ZZC7Z76ILsONFAYO5WDkPY8Qo/kiMB3ndyASX7fQ==", "freight"=>{"date_freight"=>"1999-03-10", "value_freight"=>"3000", "value_left"=>"2000", "source_freight"=>"Curitiba", "destiny_freight"=>"Sao Paulo"}, "commit"=>"Create Freight"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "freights" ("value_freight", "value_left", "date_freight", "source_freight", "destiny_freight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["value_freight", 3000.0], ["value_left", 2000.0], ["date_freight", "1999-03-10"], ["source_freight", "Curitiba"], ["destiny_freight", "Sao Paulo"], ["created_at", "2018-05-17 11:34:29.905212"], ["updated_at", "2018-05-17 11:34:29.905212"]]
+  [1m[35m (122.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/1
+Completed 302 Found in 130ms (ActiveRecord: 122.7ms)
+
+
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-17 08:34:30 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 57ms (Views: 38.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:34:36 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:39:in `freight_params'
+app/controllers/freights_controller.rb:17:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.8ms)
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-17 08:37:52 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 62ms (Views: 35.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-17 08:37:53 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:37:54 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:19:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.9ms)
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:38:26 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 17ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:18:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.1ms)
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:39:20 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:18:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.5ms)
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:39:22 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:18:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.7ms)
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:39:33 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:18:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.5ms)
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:40:23 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:18:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.3ms)
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-17 08:40:26 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:40:32 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:18:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.3ms)
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:44:40 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:18:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.4ms)
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:44:41 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:18:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.1ms)
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:47:12 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 16ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:19:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.7ms)
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:47:52 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 16ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:19:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.9ms)
+Started GET "/freights" for 127.0.0.1 at 2018-05-17 08:48:40 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-17 08:48:44 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:48:46 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:19:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.5ms)
+Started GET "/freights" for 127.0.0.1 at 2018-05-17 08:49:13 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:49:17 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: freight):
+  
+app/controllers/freights_controller.rb:42:in `freight_params'
+app/controllers/freights_controller.rb:19:in `edit'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.8ms)
+Started GET "/freights" for 127.0.0.1 at 2018-05-17 08:53:04 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Freight with 'id'=):
+  
+app/controllers/freights_controller.rb:47:in `set_freight'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.0ms)
+Started GET "/freights" for 127.0.0.1 at 2018-05-17 08:53:05 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Freight with 'id'=):
+  
+app/controllers/freights_controller.rb:47:in `set_freight'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.3ms)
+Started GET "/freights" for 127.0.0.1 at 2018-05-17 08:55:05 -0300
+  
+SyntaxError (/home/lamind-admin/Documents/julio/horizonte/app/controllers/freights_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+  before_action :set_freight, only [:show, :edit, :update]
+                                    ^):
+  
+app/controllers/freights_controller.rb:2: syntax error, unexpected [, expecting keyword_do or '{' or '('
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.3ms)
+Started GET "/freights" for 127.0.0.1 at 2018-05-17 08:55:55 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 45ms (Views: 39.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:56:13 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  Rendered freights/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/freights/1" for 127.0.0.1 at 2018-05-17 08:56:27 -0300
+Processing by FreightsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jpKaKq4hf5R8RRVivwk9Q0xYY5FaVHIuibz0pae4Ki3zJKY0WHAJ5cxFAKf5lovk3UAS+OMYLPzr/rQ2QoUVXA==", "freight"=>{"date_freight"=>"1999-03-10", "value_freight"=>"30002", "value_left"=>"2000.0", "source_freight"=>"Curitiba", "destiny_freight"=>"Sao Paulo"}, "commit"=>"Update Freight", "id"=>"1"}
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "freights" SET "value_freight" = ?, "updated_at" = ? WHERE "freights"."id" = ?[0m  [["value_freight", 30002.0], ["updated_at", "2018-05-17 11:56:27.699763"], ["id", 1]]
+  [1m[35m (82.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/1
+Completed 302 Found in 92ms (ActiveRecord: 83.6ms)
+
+
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-17 08:56:27 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:56:58 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  Rendered freights/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 56ms (Views: 38.3ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/freights/1" for 127.0.0.1 at 2018-05-17 08:58:23 -0300
+Processing by FreightsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KahtWwi0T0gkN8mVVJ3pyZWGFtWTwt+jhskB/xvk7FdUHlFF/uU5OZQ33FASAl9uBJ5nvCqOgXHki0Fs/tnTJg==", "freight"=>{"date_freight"=>"1999-03-10", "value_freight"=>"30002.0", "value_left"=>"2000.0", "source_freight"=>"Curitiba", "destiny_freight"=>"Sao Paulo"}, "commit"=>"Update Freight", "id"=>"1"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/1
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-17 08:58:23 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-17 08:58:26 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  Rendered freights/edit.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/freights/1" for 127.0.0.1 at 2018-05-17 09:04:28 -0300
+Processing by FreightsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s5p8F0dQR+3f1WAgL10vyQY+aSazyoCKy5RBT1TkzYTOLEAJsQExnG/VdeVpwplulyYYTwqG3lip1gHcsdny9Q==", "freight"=>{"date_freight"=>"1999-03-10", "value_freight"=>"30002.0", "value_left"=>"2000.0", "source_freight"=>"Curitibaaa", "destiny_freight"=>"Sao Paulo"}, "commit"=>"Update Freight", "id"=>"1"}
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "freights" SET "source_freight" = ?, "updated_at" = ? WHERE "freights"."id" = ?[0m  [["source_freight", "Curitibaaa"], ["updated_at", "2018-05-17 12:04:28.761152"], ["id", 1]]
+  [1m[35m (92.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/1
+Completed 302 Found in 120ms (ActiveRecord: 94.3ms)
+
+
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-17 09:04:28 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (188.5ms)
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `destroy_freight_path' for #<#<Class:0x00000000037ad4f8>:0x000000000378b2b8>
+Did you mean?  edit_freight_path):
+    29: <%= link_to '| Novo frete |', :back %>
+    30: <%= link_to '| Fretes |', freights_url %>
+    31: <%= link_to '| Editar frete |', edit_freight_path(@freight) %>
+    32: <%= link_to '| Editar frete |', destroy_freight_path(@freight) %>
+  
+app/views/freights/show.html.erb:32:in `_app_views_freights_show_html_erb___3361390639864777733_29223100'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.9ms)
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-17 09:06:45 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-17 09:06:49 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (181.5ms)
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `destroy_freight_path' for #<#<Class:0x00000000037ad4f8>:0x0000000002dd5778>
+Did you mean?  edit_freight_path):
+    21:       <td><center><%= f.destiny_freight %></center></td>
+    22:       <td><%= link_to 'Show', freight_path(f) %></td>
+    23:       <td><%= link_to 'Edit', edit_freight_path(f) %></td>
+    24:       <td><%= link_to 'Destroy', destroy_freight_path(f) %><td>
+    25: 
+    26:     </tr>
+    27:   <% end %>
+  
+app/views/freights/index.html.erb:24:in `block in _app_views_freights_index_html_erb___868080937295378078_24067660'
+app/views/freights/index.html.erb:15:in `_app_views_freights_index_html_erb___868080937295378078_24067660'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.6ms)
+Started GET "/freights" for 127.0.0.1 at 2018-05-17 09:11:15 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/freights/1" for 127.0.0.1 at 2018-05-17 09:11:19 -0300
+Processing by FreightsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ao/r/MHsxXB7UF37v94eZY5PJuHxeznWv5NTRxiHImOwe2GbarTfo04ttPePdFJYEgsYwzfE5tmVHzUvKK9jQw==", "id"=>"1"}
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/freights_controller.rb:12:in `destroy'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.7ms)
+Started DELETE "/freights/1" for 127.0.0.1 at 2018-05-17 09:11:29 -0300
+Processing by FreightsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ao/r/MHsxXB7UF37v94eZY5PJuHxeznWv5NTRxiHImOwe2GbarTfo04ttPePdFJYEgsYwzfE5tmVHzUvKK9jQw==", "id"=>"1"}
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "freights" WHERE "freights"."id" = ?[0m  [["id", 1]]
+  [1m[35m (118.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights
+Completed 302 Found in 138ms (ActiveRecord: 120.1ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-17 09:11:30 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-17 09:11:33 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/freights" for 127.0.0.1 at 2018-05-17 09:11:55 -0300
+Processing by FreightsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jjI66SmCKeit4Lhy0YNS/4UOnbl4dUEd5O+qNsQtvWHhsEo8ddD3A3ExPiDEYrf2tfz4xUBpENQ/iYMJLw8MKw==", "freight"=>{"date_freight"=>"9997-02-01", "value_freight"=>"516516", "value_left"=>"561651", "source_freight"=>"daghauidbg", "destiny_freight"=>"ahdoasd"}, "commit"=>"Create Freight"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.6ms)[0m  [1m[32mINSERT INTO "freights" ("value_freight", "value_left", "date_freight", "source_freight", "destiny_freight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["value_freight", 516516.0], ["value_left", 561651.0], ["date_freight", "9997-02-01"], ["source_freight", "daghauidbg"], ["destiny_freight", "ahdoasd"], ["created_at", "2018-05-17 12:11:55.745802"], ["updated_at", "2018-05-17 12:11:55.745802"]]
+  [1m[35m (116.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/2
+Completed 302 Found in 127ms (ActiveRecord: 121.6ms)
+
+
+Started GET "/freights/2" for 127.0.0.1 at 2018-05-17 09:11:55 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/freights/2" for 127.0.0.1 at 2018-05-17 09:13:00 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 38ms (Views: 35.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/freights/2" for 127.0.0.1 at 2018-05-17 09:13:03 -0300
+Processing by FreightsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JLSBYvBcyfBtwBDNZBxGL1FkU2gSRtdAVcwbunRMg0X+QAsFWwTTI1i9+cFUtgoSzSBtStT5CE9/QH3SRGTCZQ==", "id"=>"2"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "freights" WHERE "freights"."id" = ?[0m  [["id", 2]]
+  [1m[35m (128.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights
+Completed 302 Found in 133ms (ActiveRecord: 129.0ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-17 09:13:03 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]

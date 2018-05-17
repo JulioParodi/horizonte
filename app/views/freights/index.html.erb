@@ -20,9 +20,15 @@
       <td><center><%= f.source_freight %></center></td>
       <td><center><%= f.destiny_freight %></center></td>
       <td><%= link_to 'Show', freight_path(f) %></td>
+      <td><%= link_to 'Edit', edit_freight_path(f) %></td>
+      <td><%= link_to 'Destroy', freight_path(f),
+              method: :delete,
+              data: { confirm: 'Tem certeza?' } %></td>
+
     </tr>
   <% end %>
 
 </table>
 <br/>
+
 <%= link_to 'Voltar', :back %>
