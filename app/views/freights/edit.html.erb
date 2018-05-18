@@ -1,5 +1,6 @@
 <h1>Editando frete <%= @freight.id %> </h1>
 
+<hr/>
 
 <%=  form_for @freight do |form| %>
 
@@ -31,8 +32,8 @@
 
 
  <p>
-   <%= form.submit %>
+   <%= form.submit value: "Atualizar" %>
  </p>
 <% end %>
 <br/>
-<%= link_to 'Voltar', :back %>
+<%= link_to 'Voltar', :back , class: "btn btn-danger"%>

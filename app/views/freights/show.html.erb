@@ -1,5 +1,5 @@
 <h1> Frete nº <%= @freight.id%> </h1>
-
+<hr/>
 <p>
   <strong>DATA:</strong>
   <%= @freight.date_freight %>
@@ -26,8 +26,8 @@
 </p>
 
 <br/>
-<%= link_to '| Editar frete |', edit_freight_path(@freight) %>
-<%= link_to '| Destroy |', freight_path(@freight),method: :delete, data: { confirm: 'Tem certeza?' } %>
+<%= link_to 'Editar frete', edit_freight_path(@freight), class: "btn btn-info" %>
+<%= link_to 'Deletar', freight_path(@freight),method: :delete, data: { confirm: 'Tem certeza?' }, class: "btn btn-danger" %>
 </br></br>
-<%= link_to '| Novo frete |', :back %>
-<%= link_to '| Fretes |', freights_url %>
+<%= link_to 'Novo frete' , new_freight_url, class: "btn btn-primary"%>
+<%= link_to 'Fretes ', freights_url, class: "btn btn-default" %>

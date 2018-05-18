@@ -1,11 +1,13 @@
+
 <h1>Novo frete </h1>
 
+<hr/>
 
 <%=  form_for @freight, url: freights_path do |form| %>
 
 <p>
  <% form.label :date_freight %> <strong> Data <strong><br>
- <date-util format = "dd/MM/yyyy"><%= form.date_field :date_freight %> </date-util>
+ <%= form.date_field :date_freight, max: Date.today %>
 </p>
 
 
@@ -31,8 +33,8 @@
 
 
  <p>
-   <%= form.submit %>
+   <%= form.submit value: 'Salvar' %>
  </p>
 <% end %>
 <br/>
-<%= link_to 'Voltar', :back %>
+<%= link_to 'Voltar', :back, class: "btn btn-danger" %>
