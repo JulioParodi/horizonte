@@ -6226,3 +6226,292 @@ Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.2ms)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from require at /home/lamind-admin/Documents/julio/horizonte/bin/rails:9)
+  [1m[35m (88.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (88.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFreights (20180516165350)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "freights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "value_freight" float, "value_left" float, "date_freight" date, "source_freight" varchar, "destiny_freight" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180516165350"]]
+  [1m[35m (87.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-18 16:04:26.908562"], ["updated_at", "2018-05-18 16:04:26.908562"]]
+  [1m[35m (81.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/freights" for 127.0.0.1 at 2018-05-18 13:04:34 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 313ms (Views: 299.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-18 13:04:39 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-18 13:04:49 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:04:51 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 55ms (Views: 47.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/freights" for 127.0.0.1 at 2018-05-18 13:05:05 -0300
+Processing by FreightsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MSde0Y7IUBBYUC83EqPJ+nqg+gb+axinlNbTaLWyOGJX0wXAKVrv3kTGJ5q8mbgLUK0TJyeNRI8a4dXpyO+NKg==", "freight"=>{"date_freight"=>"18887-05-10", "value_freight"=>"", "value_left"=>"", "source_freight"=>"", "destiny_freight"=>""}, "commit"=>"Create Freight"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "freights" ("date_freight", "source_freight", "destiny_freight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date_freight", "18887-05-10"], ["source_freight", ""], ["destiny_freight", ""], ["created_at", "2018-05-18 16:05:05.928444"], ["updated_at", "2018-05-18 16:05:05.928444"]]
+  [1m[35m (176.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/1
+Completed 302 Found in 183ms (ActiveRecord: 177.5ms)
+
+
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-18 13:05:06 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 56ms (Views: 39.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/freights/1" for 127.0.0.1 at 2018-05-18 13:05:12 -0300
+Processing by FreightsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NbJg7K9VHhgbW/4lMD9SCDcYYMvJs3SMBwJ30S1laLpAVgdaq6Za56RX0zT4Q8r3MqUAfVi/Joo0Ls1mP7b3pQ==", "id"=>"1"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "freights" WHERE "freights"."id" = ?[0m  [["id", 1]]
+  [1m[35m (63.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights
+Completed 302 Found in 68ms (ActiveRecord: 63.6ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-18 13:05:12 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:05:18 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/freights" for 127.0.0.1 at 2018-05-18 13:05:25 -0300
+Processing by FreightsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qstMy78L1rgR1hC+vT58TpmWIpX89vAzvbdxWvr8Yr7MPxfaGJlpdg1AGBMTBA2/s5vLtCUQrBszgHfbh6HX9g==", "freight"=>{"date_freight"=>"", "value_freight"=>"2343", "value_left"=>"3453", "source_freight"=>"fasf", "destiny_freight"=>"sdfs"}, "commit"=>"Create Freight"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "freights" ("value_freight", "value_left", "source_freight", "destiny_freight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["value_freight", 2343.0], ["value_left", 3453.0], ["source_freight", "fasf"], ["destiny_freight", "sdfs"], ["created_at", "2018-05-18 16:05:25.124936"], ["updated_at", "2018-05-18 16:05:25.124936"]]
+  [1m[35m (137.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/2
+Completed 302 Found in 147ms (ActiveRecord: 138.3ms)
+
+
+Started GET "/freights/2" for 127.0.0.1 at 2018-05-18 13:05:25 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 56ms (Views: 53.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-18 13:05:27 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:18:18 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:18:21 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:31 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:32 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:32 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:32 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:32 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:33 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:33 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:33 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:33 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:33 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:34 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:34 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:34 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-18 13:32:34 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/freights" for 127.0.0.1 at 2018-05-18 13:35:12 -0300
+Processing by FreightsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uRqEEGaugL/dwXl9ehjuiYiVxYIgdipDqRg0QLSG25fM/uOmYl3EQGLNVGyyZHZ2jSilNLF6eEWaNI73plVEiA==", "freight"=>{"date_freight"=>"", "value_freight"=>"", "value_left"=>"", "source_freight"=>"", "destiny_freight"=>""}, "commit"=>"Create Freight"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "freights" ("source_freight", "destiny_freight", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["source_freight", ""], ["destiny_freight", ""], ["created_at", "2018-05-18 16:35:12.302328"], ["updated_at", "2018-05-18 16:35:12.302328"]]
+  [1m[35m (54.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/3
+Completed 302 Found in 60ms (ActiveRecord: 55.4ms)
+
+
+Started GET "/freights/3" for 127.0.0.1 at 2018-05-18 13:35:12 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-18 13:35:15 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights/2" for 127.0.0.1 at 2018-05-18 13:35:51 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/freights/2" for 127.0.0.1 at 2018-05-18 13:36:48 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights/2" for 127.0.0.1 at 2018-05-18 13:37:00 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
