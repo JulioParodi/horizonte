@@ -6,8 +6,7 @@ class CreateFreights < ActiveRecord::Migration[5.0]
       t.date :date_freight
       t.string :source_freight
       t.string :destiny_freight
-
-
+      t.references :truck, foreign_key: true
       t.timestamps
     end
   end

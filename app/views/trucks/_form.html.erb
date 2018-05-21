@@ -1,0 +1,27 @@
+<%= form_for(truck) do |f| %>
+  <% if truck.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(truck.errors.count, "error") %> prohibited this truck from being saved:</h2>
+
+      <ul>
+      <% truck.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :plate %>
+    <%= f.text_field :plate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mark %>
+    <%= f.text_field :mark %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

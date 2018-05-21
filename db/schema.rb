@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180516165350) do
+ActiveRecord::Schema.define(version: 20180521174809) do
 
   create_table "freights", force: :cascade do |t|
     t.float    "value_freight"
@@ -18,8 +18,17 @@ ActiveRecord::Schema.define(version: 20180516165350) do
     t.date     "date_freight"
     t.string   "source_freight"
     t.string   "destiny_freight"
+    t.integer  "truck_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.index ["truck_id"], name: "index_freights_on_truck_id"
+  end
+
+  create_table "trucks", force: :cascade do |t|
+    t.string   "plate"
+    t.string   "mark"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

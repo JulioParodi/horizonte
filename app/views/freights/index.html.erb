@@ -1,16 +1,16 @@
-<h1>Listando Fretes</h1>
+<h1>Listando Fretes</h1> 
 
 <hr/>
 
 <table class="table  table-bordered table-hover table-striped" >
   <thead class="thead-dark" >
     <tr>
-      <th scope="col"> # </th>
-      <th scope="col"> Data</th>
-      <th scope="col"> Valor do frete </th>
-      <th scope="col"> Valor restante </th>
-      <th scope="col"> Origem do frete </th>
-      <th scope="col"> Destino do frete </th>
+      <th scope="col"><center> #</center> </th>
+      <th scope="col"><center> Data </center></th>
+      <th scope="col"><center> Valor do frete </center></th>
+      <th scope="col"><center> Valor restante </center></th>
+      <th scope="col"><center> Origem do frete </center></th>
+      <th scope="col"><center> Destino do frete </center></th>
       <th scope="col"></th>
     </tr>
   </thead>
@@ -22,7 +22,7 @@
     <tr >
 
       <%cont = cont + 1%>
-      <th scope="row"> <%= cont %> </th>
+      <th scope="row"> <%= f.truck.plate %> </th>
 
       <td><%= I18n.l (f.date_freight) %> </td>
       <td>R$ <%= f.value_freight %></td>
@@ -39,6 +39,9 @@
 
     </tr>
   <% end %>
+  <th class="table-dark" > Total restante </th>
+
+  <td><center>R$ <%= @soma %> <center></td>
 </tbory>
 
 </table>
