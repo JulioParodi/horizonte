@@ -12482,3 +12482,220 @@ Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
   [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+Started GET "/" for 127.0.0.1 at 2018-05-21 13:46:34 -0300
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.7) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.7) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.6ms)
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from require at /home/lamind-admin/Documents/julio/horizonte/bin/rails:9)
+  [1m[35m (73.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (77.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFreights (20180516165350)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "freights" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "value_freight" float, "value_left" float, "date_freight" date, "source_freight" varchar, "destiny_freight" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180516165350"]]
+  [1m[35m (65.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-21 16:46:57.703462"], ["updated_at", "2018-05-21 16:46:57.703462"]]
+  [1m[35m (47.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 127.0.0.1 at 2018-05-21 13:47:02 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (296.3ms)
+Completed 200 OK in 424ms (Views: 415.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-21 13:47:05 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.6ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 57ms (Views: 27.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-21 13:47:07 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (79.5ms)
+Completed 200 OK in 155ms (Views: 142.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/freights" for 127.0.0.1 at 2018-05-21 13:47:32 -0300
+Processing by FreightsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eh56N/DQVe1qprUnh/lqSUT87bMNk9g216MAogCxTF2Rtc+1MEtYHK3Zlrd08uhADBWQvyLkjQOd4/F4QXfiIA==", "freight"=>{"date_freight"=>"2018-05-21", "value_freight"=>"3000", "value_left"=>"1500", "source_freight"=>"Curitiba", "destiny_freight"=>"Sao Paulo"}, "commit"=>"Salvar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "freights" ("value_freight", "value_left", "date_freight", "source_freight", "destiny_freight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["value_freight", 3000.0], ["value_left", 1500.0], ["date_freight", "2018-05-21"], ["source_freight", "Curitiba"], ["destiny_freight", "Sao Paulo"], ["created_at", "2018-05-21 16:47:32.480374"], ["updated_at", "2018-05-21 16:47:32.480374"]]
+  [1m[35m (88.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/1
+Completed 302 Found in 103ms (ActiveRecord: 90.7ms)
+
+
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-21 13:47:32 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 74ms (Views: 54.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-21 13:47:55 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 56ms (Views: 53.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-21 13:48:23 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights/new" for 127.0.0.1 at 2018-05-21 13:48:38 -0300
+Processing by FreightsController#new as HTML
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 47ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-21 13:48:39 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-21 13:48:40 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-21 13:48:59 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/freights/1/edit" for 127.0.0.1 at 2018-05-21 13:49:24 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  Rendered freights/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 58ms (Views: 46.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/freights/1" for 127.0.0.1 at 2018-05-21 13:49:34 -0300
+Processing by FreightsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+M1QOlmr1d8aTmAU1SmvNP5A2ocWuYOEsBSkWDq5eC7YjZv15SI67dZn0vuMAAduO+C+PV2E8H/k5C8r5cUslw==", "freight"=>{"date_freight"=>"2018-05-21", "value_freight"=>"3000.0", "value_left"=>"1500.0", "source_freight"=>"Curitiba - PR", "destiny_freight"=>"Sao Paulo - SP"}, "commit"=>"Atualizar", "id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "freights" SET "source_freight" = ?, "destiny_freight" = ?, "updated_at" = ? WHERE "freights"."id" = ?[0m  [["source_freight", "Curitiba - PR"], ["destiny_freight", "Sao Paulo - SP"], ["updated_at", "2018-05-21 16:49:34.738665"], ["id", 1]]
+  [1m[35m (182.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/1
+Completed 302 Found in 193ms (ActiveRecord: 183.1ms)
+
+
+Started GET "/freights/1" for 127.0.0.1 at 2018-05-21 13:49:34 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-21 13:49:38 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-21 13:49:44 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-21 13:49:46 -0300
+Processing by FreightsController#index as HTML
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendered freights/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]

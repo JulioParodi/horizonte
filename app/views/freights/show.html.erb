@@ -2,17 +2,17 @@
 <hr/>
 <p>
   <strong>DATA:</strong>
-  <%= @freight.date_freight %>
+  <%= I18n.l(@freight.date_freight) %>
 </p>
 
 <p>
   <strong>VALOR FRETE:</strong>
-  <%= @freight.value_freight %>
+  R$ <%= @freight.value_freight %>
 </p>
 
 <p>
   <strong>VALOR RESTANTE:</strong>
-  <%= @freight.value_left %>
+  R$ <%= @freight.value_left %>
 </p>
 
 <p>
