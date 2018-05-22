@@ -1,11 +1,17 @@
-<h1>Listando Fretes</h1> 
 
+
+<h1>Listando Fretes  <%=  " #{@plate_truck}" %></h1>
+<% if @id_truck == 0%>
+  <%=cont = @plate_truck%>
+<%else%>
+  <% cont = 0 %>
+<%end%>
 <hr/>
 
 <table class="table  table-bordered table-hover table-striped" >
   <thead class="thead-dark" >
     <tr>
-      <th scope="col"><center> #</center> </th>
+      <th scope="col"><center> # </center></th>
       <th scope="col"><center> Data </center></th>
       <th scope="col"><center> Valor do frete </center></th>
       <th scope="col"><center> Valor restante </center></th>
@@ -17,18 +23,23 @@
 
   <tbody>
 
-  <% cont = 0 %>
-  <% @freights.each do |f| %>
-    <tr >
 
-      <%cont = cont + 1%>
-      <th scope="row"> <%= f.truck.plate %> </th>
+  <% @freights.each do |f| %>
+
+    <tr >
+      <%if !(@id_truck == 0) %>
+        <% cont = cont + 1 %>
+      <%else%>
+          <%cont = f.truck.plate%>
+      <%end%>
+
+      <th scope="row"><center> <%= cont %> </center></th>
 
       <td><%= I18n.l (f.date_freight) %> </td>
       <td>R$ <%= f.value_freight %></td>
       <td>R$ <%= f.value_left %></td>
-      <td><center><%= f.source_freight %></center></td>
-      <td><center><%= f.destiny_freight %></center></td>
+      <td><%= f.source_freight %></td>
+      <td><%= f.destiny_freight %></td>
       <td>
         <%= link_to 'Mostrar', freight_path(f), class: "btn btn-default btn-sm" %>
         <%= link_to 'Editar', edit_freight_path(f), class: "btn btn-info btn-sm" %>
@@ -47,5 +58,5 @@
 </table>
 <br/>
 
-<%= link_to 'Novo frete' , new_freight_url, class: "btn btn-primary"%>
+<%= link_to 'Novo frete' , new_freight_url(@id_truck), class: "btn btn-primary"%>
 <%= link_to 'Voltar', root_path , class: "btn btn-danger" %>

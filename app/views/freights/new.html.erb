@@ -4,12 +4,14 @@
 <hr/>
 
 <%=  form_for @freight, url: freights_path do |form| %>
+
 <% if @freight.truck_id?%>
 <%= form.hidden_field :truck_id , value: @freight.truck_id %>
 <% else%>
 <p>
- <% form.label :truck_id %> <strong> Caminhão <strong><br>
- <%= form.number_field :truck_id %>
+  <strong>Caminhão </strong> <br>
+  <%= collection_select(:freight, :truck_id, Truck.all, :id,:plate)%>
+
 </p>
 <%end%>
 <p>

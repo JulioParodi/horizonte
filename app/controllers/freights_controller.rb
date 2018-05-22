@@ -5,19 +5,17 @@ class FreightsController < ApplicationController
 
     aux = []
     @freights = Freight.all
-
+    @id_truck = 0
     if params.has_key? :format
-      id_truck = params[:format].to_i
+      @id_truck = params[:format].to_i
+      @plate_truck = Truck.find(@id_truck).plate
      @freights.each do |f|
-       if (f.truck_id) == id_truck
+       if (f.truck_id) == @id_truck
           aux << f
        end
      end
       @freights = aux
-
     end
-
-
 
    @soma = 0
    @freights.each do |f|
