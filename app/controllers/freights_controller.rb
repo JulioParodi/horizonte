@@ -3,8 +3,26 @@ class FreightsController < ApplicationController
 
   def index
 
-    aux = []
+
     @freights = Freight.all
+
+
+    aux = []
+    if params[:search].present?
+      @start = params[:search][:start_date].to_date
+      @end = params[:search][:end_date].to_date
+      puts @start
+      puts @end
+      @freights.each do |f|
+        puts "fora do if"
+        if f.date_freight > @start && f.date_freight < @end
+          aux << f
+        end
+      end
+      @freights = aux
+    end
+
+    aux = []
     @id_truck = 0
     if params.has_key? :format
       @id_truck = params[:format].to_i
@@ -21,6 +39,7 @@ class FreightsController < ApplicationController
    @freights.each do |f|
      @soma = @soma + f.value_left
    end
+
   end
 
   def show
@@ -77,4 +96,7 @@ class FreightsController < ApplicationController
 
     end
 
+    def selected_date(symbol)
+      params[:search].present? && params[:search][symbol].present? ? params[:search][symbol].to_date : Time.now.to_date
+    end
 end

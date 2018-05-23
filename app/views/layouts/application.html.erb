@@ -24,14 +24,16 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse" style="background-color: black;" >
-      <%= image_tag "/assets/horizonte_logo.png" , height: "150px" %>
+    <nav class="navbar navbar-inverse" >
+      <div  >
+      <%=link_to image_tag("/assets/horizonte_logo.png" , height: "120px", width: "520px") , root_path  %>
+    </div>
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <%= link_to 'Fretes' , freights_path %>
+          <%= link_to 'Caminhões' , trucks_path %>
         </li>
         <li class="nav-item">
-          <%= link_to 'Caminhões' , trucks_path %>
+          <%= link_to 'Fretes' , freights_path %>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">-</a>
@@ -44,7 +46,11 @@
     </nav>
     <%= yield %>
 
-
+    <footer class="footer">
+      Endereço : BR 116 KM-algum |
+      TELEFONE : (41) 3367-7330 |
+      CNPJ : 1002.3102.0001-10
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

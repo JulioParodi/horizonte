@@ -19,14 +19,16 @@
         <td><%= truck.mark %></td>
         <td>
           <%= link_to 'Mostrar', truck, class: "btn btn-default btn-sm" %>
-          <%= link_to 'Editar', edit_truck_path(truck), class: "btn btn-info btn-sm" %>
+          <%= link_to 'Editar', edit_truck_path(truck), class: "btn btn-default btn-sm" %>
           <%= link_to 'Deletar', truck,
                 method: :delete,
                 data: { confirm: 'Tem certeza?' }, class: "btn btn-danger btn-sm" %>
         </td>
         <td>
-        <%= link_to 'Novo frete' , new_freight_url(truck.id), class: "btn btn-primary"%>
-        <%= link_to 'Voltar', root_path , class: "btn btn-danger" %>
+
+        <%= link_to 'Novo frete' , new_freight_url(truck.id), class: "btn btn-success"%>
+        <%= link_to 'Fretes' , freights_path(truck.id), class: "btn btn-default"%>
+
       </td>
       </tr>
     <% end %>
@@ -36,4 +38,5 @@
 <br>
 
 
-<%= link_to 'Novo Caminhão' , new_truck_path, class: "btn btn-primary"%>
+<%= link_to 'Novo Caminhão' , new_truck_path, class: "btn btn-success"%>
+<%= link_to 'Voltar', :back , class: "btn btn-default" %>

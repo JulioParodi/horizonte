@@ -13,15 +13,15 @@
 
   <div class="field">
     <%= f.label :plate %>
-    <%= f.text_field :plate %>
+    <%= f.text_field :plate ,required: true %>
   </div>
 
   <div class="field">
     <%= f.label :mark %>
-    <%= f.text_field :mark %>
+    <%= f.text_field :mark ,required: true %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit value: "Criar Caminhão" %>
   </div>
 <% end %>
