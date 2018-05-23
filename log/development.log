@@ -21921,3 +21921,371 @@ Processing by FreightsController#index as HTML
 Completed 200 OK in 76ms (Views: 72.8ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-05-23 12:05:25 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2465ms (Views: 2426.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-23 12:11:08 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 528ms (Views: 503.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-23 12:11:28 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-23 12:11:56 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-23 12:12:22 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-23 12:12:50 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-23 12:14:41 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-23 12:14:59 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-23 12:15:10 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-23 12:15:18 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-23 12:15:48 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:16:00 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (33.1ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (151.4ms)
+Completed 200 OK in 270ms (Views: 175.6ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-23 12:16:46 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:16:49 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.7ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 36ms (Views: 31.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:16:51 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:16:52 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.6ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 42ms (Views: 37.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:16:54 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 48ms (Views: 44.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:17:57 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/lamind-admin/Documents/julio/horizonte/app/views/layouts/application.html.erb:29: syntax error, unexpected '<', expecting ')'
+      <ul class="nav justify-content-end">
+       ^
+/home/lamind-admin/Documents/julio/horizonte/app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+        <li class="nav-item">
+         ^
+/home/lamind-admin/Documents/julio/horizonte/app/views/layouts/application.html.erb:31: syntax error, unexpected '<'
+          <%= link_to 'Fretes' , freight...
+           ^
+/home/lamind-admin/Documents/julio/horizonte/app/views/layouts/application.html.erb:57: syntax error, unexpected keyword_ensure, expecting ')'
+/home/lamind-admin/Documents/julio/horizonte/app/views/layouts/application.html.erb:59: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/layouts/application.html.erb:29: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:31: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:57: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.erb:59: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.9ms)
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:18:20 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:18:45 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/home/lamind-admin/Documents/julio/horizonte/app/views/layouts/application.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+...sets/horizonte_logo.png" height: "100px" );@output_buffer.sa...
+...                               ^):
+  
+app/views/layouts/application.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.8ms)
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:18:55 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/home/lamind-admin/Documents/julio/horizonte/app/views/layouts/application.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+...sets/horizonte_logo.png" heigth: "100px" );@output_buffer.sa...
+...                               ^):
+  
+app/views/layouts/application.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.1ms)
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:19:17 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:19:28 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:19:45 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:19:51 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:20:23 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:22:19 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 116ms (Views: 113.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:23:18 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 61ms (Views: 57.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:24:04 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 45ms (Views: 41.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:25:31 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-23 12:27:02 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 76ms (Views: 73.1ms | ActiveRecord: 0.5ms)
+
+

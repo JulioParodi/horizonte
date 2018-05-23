@@ -24,8 +24,8 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-      <h3 > Horizonte Transportes LTDA</h3>
+    <nav class="navbar navbar-inverse" style="background-color: black;" >
+      <%= image_tag "/assets/horizonte_logo.png" , height: "150px" %>
       <ul class="nav justify-content-end">
         <li class="nav-item">
           <%= link_to 'Fretes' , freights_path %>
@@ -44,8 +44,7 @@
     </nav>
     <%= yield %>
 
-    <div id="div-rodape">
-    </div>
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
