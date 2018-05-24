@@ -43,8 +43,9 @@ div form {
 }
 
 footer{
-  position: relative;
+  position: fixed;
   bottom: 0;
+  
 }
 .footer {
   display: block;
@@ -53,7 +54,7 @@ footer{
   margin-top: 20px;
   padding-top: 10px;
   background-color: black;
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 50px ;
   font-size: 15px;
   text-align: center;
   color: white;

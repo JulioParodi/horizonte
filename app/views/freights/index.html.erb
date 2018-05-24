@@ -1,12 +1,6 @@
-
-
+<%= flash_message.html_safe %>
 <h1>Listando Fretes  <%=  " #{@plate_truck}" %></h1>
-<% if @id_truck == 0%>
-  <%=cont = @plate_truck%>
 
-<%else%>
-  <% cont = 0 %>
-<%end%>
 <hr/>
 <div >
 <%= form_for :search, method: :get do |f| %>
@@ -36,11 +30,11 @@
   <tbody>
 
 
-  <% @freights.each do |f| %>
+  <% @freights.each_with_index do |f,i| %>
 
     <tr >
-      <%if !(@id_truck == 0) %>
-        <% cont = cont + 1 %>
+      <%if (@id_truck != 0) %>
+        <% cont = i + 1 %>
       <%else%>
           <%cont = f.truck.plate%>
       <%end%>
