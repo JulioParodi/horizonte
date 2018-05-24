@@ -15,3 +15,12 @@
   { plate: 'DPR-0052', mark: 'Chevrolet - vectra' },
   { plate: 'AGR-0024', mark: 'Volvo - nh12'}
     ])
+
+  puts "--------Carregando Caminhões------[OK]"
+  puts "--------Carregando Fretes------"
+
+  20.times do |i|
+    Freight.create!(value_freight: Faker::Number.decimal(4,2) , value_left: Faker::Number.decimal(4,2),date_freight: Faker::Date.between(100.days.ago, Date.today), source_freight: Faker::Address.city ,destiny_freight: Faker::Address.city, truck_id: Faker::Number.between(1,4) )
+  end
+
+  puts "--------Carregando Fretes------[OK]"

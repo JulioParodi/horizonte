@@ -3,38 +3,58 @@ class FreightsController < ApplicationController
 
   def index
 
-
     @freights = Freight.all
+    @id_truck = 0
+    puts params.inspect
+    #FILTRAGEM POR DATAS
+    aux = []
+    if params[:search].present?
+      if params[:search][:truck_id] != 0
+        @id_truck = params[:search][:truck_id].to_i
+        @plate_truck = Truck.find(@id_truck).plate
+        @freights.each do |f|
+          if (f.truck_id) == @id_truck
+            aux << f
+            puts 'select'
+          end
+        end
+        @freights = aux
+      end
+
+      aux = []
+      @start = params[:search][:start_date].to_date
+      @end = params[:search][:end_date].to_date
+      puts params.inspect
+      if params[:search][:start_date] != "" && params[:search][:end_date] != ""
+        @freights.each do |f|
+          if f.date_freight >= @start && f.date_freight <= @end
+            aux << f
+          end
+        end
+        @freights = aux
+      end
+    end
+
+
 
 
     aux = []
-    if params[:search].present?
-      @start = params[:search][:start_date].to_date
-      @end = params[:search][:end_date].to_date
-      puts @start
-      puts @end
+
+    if params.has_key? :format
+      puts 'tamo ao'
+      if @id_truck == 0
+        @id_truck = params[:format].to_i
+      end
+      @plate_truck = Truck.find(@id_truck).plate
       @freights.each do |f|
-        puts "fora do if"
-        if f.date_freight > @start && f.date_freight < @end
+        if (f.truck_id) == @id_truck
           aux << f
+          puts 'select'
         end
       end
       @freights = aux
     end
-
-    aux = []
-    @id_truck = 0
-    if params.has_key? :format
-      @id_truck = params[:format].to_i
-      @plate_truck = Truck.find(@id_truck).plate
-     @freights.each do |f|
-       if (f.truck_id) == @id_truck
-          aux << f
-       end
-     end
-      @freights = aux
-    end
-
+    puts @id_truck
    @soma = 0
    @freights.each do |f|
      @soma = @soma + f.value_left

@@ -3,19 +3,21 @@
 <h1>Listando Fretes  <%=  " #{@plate_truck}" %></h1>
 <% if @id_truck == 0%>
   <%=cont = @plate_truck%>
+
 <%else%>
   <% cont = 0 %>
 <%end%>
 <hr/>
-<div class="filter">
+<div >
 <%= form_for :search, method: :get do |f| %>
     <%= f.label :data_inicio%>
     <%= f.date_field :start_date %>
-    <%= f.label :data_final%> 
+    <%= f.label :data_final%>
     <%= f.date_field :end_date %>
-    <%= f.submit 'Search' %>
-
+    <%= f.hidden_field :truck_id , value: @id_truck %>
+    <%= f.submit 'filtrar' %>
 <% end %>
+
 <div>
 
 <table class="table  table-bordered table-striped" >
