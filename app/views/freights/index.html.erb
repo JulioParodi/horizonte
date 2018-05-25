@@ -1,15 +1,27 @@
-<%= flash_message.html_safe %>
-<h1>Listando Fretes  <%=  " #{@plate_truck}" %></h1>
+<%if flash[:error]%>
+<div class="alert alert-danger">
+  <strong><%= flash_message.html_safe %> <strong>
+</div>
+<%end%>
+<h1>Lista de Fretes  <%=  " #{@plate_truck}" %></h1>
 
 <hr/>
 <div >
 <%= form_for :search, method: :get do |f| %>
+  <div class="component-filter">
     <%= f.label :data_inicio%>
     <%= f.date_field :start_date %>
     <%= f.label :data_final%>
     <%= f.date_field :end_date %>
-    <%= f.hidden_field :truck_id , value: @id_truck %>
+  </div>
+</br>
+  <div class="component-filter">
+    <%= f.label :caminhao%>
+    <%= collection_select(:freight, :truck_id, Truck.all, :id,:plate, {prompt:true, value:nil, selected: nil})%>
+  </div>
+  <div class="component-filter">
     <%= f.submit 'filtrar' %>
+  </div>
 <% end %>
 
 <div>
@@ -18,6 +30,7 @@
   <thead class="thead-dark" >
     <tr>
       <th scope="col"><center> # </center></th>
+      <th scope="col"><center> Placa </center></th>
       <th scope="col"><center> Data </center></th>
       <th scope="col"><center> Valor do frete </center></th>
       <th scope="col"><center> Valor restante </center></th>
@@ -33,14 +46,8 @@
   <% @freights.each_with_index do |f,i| %>
 
     <tr >
-      <%if (@id_truck != 0) %>
-        <% cont = i + 1 %>
-      <%else%>
-          <%cont = f.truck.plate%>
-      <%end%>
-
-      <th scope="row"><center> <%= cont %> </center></th>
-
+      <th scope="row"><center> <%= i + 1%> </center></th>
+      <td><strong><%=f.truck.plate%></strong></td>
       <td><%= I18n.l (f.date_freight) %> </td>
       <td>R$ <%= f.value_freight %></td>
       <td>R$ <%= f.value_left %></td>

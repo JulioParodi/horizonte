@@ -21,7 +21,7 @@ h1, td, th {
 
 nav{
   background-color: black !important;
-  border-radius: 0px 0px 50px 50px !important;
+  border-radius: 0px 0px 30px 30px !important;
 }
 
 nav a {
@@ -45,7 +45,7 @@ div form {
 footer{
   position: fixed;
   bottom: 0;
-  
+
 }
 .footer {
   display: block;

@@ -1,20 +1,10 @@
 class FreightsController < ApplicationController
   before_action :set_freight, only: [:show, :edit, :update, :destroy]
 
-
-
   def index
-
     @freights = Freight.all.sort_by { |freight| [freight.truck.plate, freight.date_freight] }
     @id_truck = 0
-    puts "#-----------------------------#"
-    puts @freights
-    #FILTRAGEM POR DATAS
     @freights = index_filter_truck_and_date(@freights,@id_truck)
-    puts "---------------------------------------------"
-    puts @freights
-    @freights = index_filter_truck(@freights,@id_truck)
-    puts @freights
     @soma = index_soma_value_left(@freights)
   end
 
@@ -41,7 +31,6 @@ class FreightsController < ApplicationController
     else
       puts "error uptade freight"
     end
-
     redirect_to @freight
   end
 
@@ -57,36 +46,30 @@ class FreightsController < ApplicationController
 
 
   def index_filter_truck_and_date (freights,id_truck)
-    if params[:search].present?
+
+    if params[:freight].present?
       freights = filter_search_truck(freights, id_truck)
-      puts "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-      puts freights
+    end
+    if params[:search].present?
 
-      @start_date = params[:search][:start_date]
-      @end_date = params[:search][:end_date]
-      puts @start_date
-      puts @end_date
+      @start_date = params[:search][:start_date].to_date
+      @end_date = params[:search][:end_date].to_date
+
       if (@start_date.blank? && @end_date.blank?)
-
-         flash[:error] = "Data inicio maior que Data final"
-        freights = Freight.all.sort_by { |freight| [freight.truck.plate, freight.date_freight] }
+        #nop
+      elsif @start_date > @end_date
+        flash[:error] = "Error filtragem: Data inicio maior que Data final"
       else
-        @start_date = @start_date.to_date
-        @end_date = @end_date.to_date
-      freights = filter_search_date(freights, @start_date, @end_date)
-
+        freights = filter_search_date(freights, @start_date, @end_date)
       end
     end
-    #@id_truck = id_truck
     freights
   end
 
   def filter_search_truck (freights,id_truck)
-    puts "bbbbbbbbbbbbbbbbbbbbbb"
-    puts freights
-    if params[:search][:truck_id] != "0"
-      puts "iffffffffffffff"
-      @id_truck = params[:search][:truck_id].to_i
+
+    if params[:freight][:truck_id] != ""
+      @id_truck = params[:freight][:truck_id].to_i
       @plate_truck = Truck.find(@id_truck).plate
       aux = []
       freights.each do |f|
@@ -100,7 +83,6 @@ class FreightsController < ApplicationController
   end
 
   def filter_search_date (freights, start_date, end_date)
-    if start_date != "" && end_date != ""
       aux = []
       freights.each do |f|
         if f.date_freight >= start_date && f.date_freight <= end_date
@@ -108,31 +90,8 @@ class FreightsController < ApplicationController
         end
       end
       return aux
-    end
-    return freights
   end
 
-  def index_filter_truck (freights, id_truck)
-    if params.has_key? :format
-      freights = filter_format_truck(freights, id_truck)
-    end
-    @id_truck = id_truck
-    freights
-  end
-
-  def filter_format_truck (freights,id_truck)
-    if id_truck == 0
-      @id_truck = params[:format].to_i
-    end
-    @plate_truck = Truck.find(@id_truck).plate
-    aux = []
-    freights.each do |f|
-      if (f.truck_id) == @id_truck
-        aux << f
-      end
-    end
-    aux
-  end
 
   def index_soma_value_left (freights)
     soma = 0
@@ -141,10 +100,6 @@ class FreightsController < ApplicationController
     end
     soma
   end
-
-
-
-
 
 
   private
