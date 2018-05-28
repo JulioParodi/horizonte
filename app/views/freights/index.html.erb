@@ -6,8 +6,14 @@
 <h1>Lista de Fretes  <%=  " #{@plate_truck}" %></h1>
 
 <hr/>
+
+
 <div >
 <%= form_for :search, method: :get do |f| %>
+<div class="component-filter">
+<%= link_to 'Novo frete' , new_freight_url(@id_truck), class: "btn btn-success"%>
+</div>
+</br>
   <div class="component-filter">
     <%= f.label :data_inicio%>
     <%= f.date_field :start_date %>

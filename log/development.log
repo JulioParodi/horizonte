@@ -41221,3 +41221,1679 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-05-28 16:26:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 904ms (Views: 880.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:26:49 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.7ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.7ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (991.2ms)
+Completed 200 OK in 1156ms (Views: 1018.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/trucks" for 127.0.0.1 at 2018-05-28 16:26:59 -0300
+Processing by TrucksController#index as HTML
+  Rendering trucks/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.5ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered trucks/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:27:04 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.6ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.4ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 107ms (Views: 48.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/trucks" for 127.0.0.1 at 2018-05-28 16:27:12 -0300
+Processing by TrucksController#index as HTML
+  Rendering trucks/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered trucks/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:27:13 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.8ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.4ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 112ms (Views: 65.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:28:47 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.6ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 77ms (Views: 43.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:28:49 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 78ms (Views: 39.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:28:50 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 70ms (Views: 40.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/trucks" for 127.0.0.1 at 2018-05-28 16:28:51 -0300
+Processing by TrucksController#index as HTML
+  Rendering trucks/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.4ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered trucks/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:28:52 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 87ms (Views: 52.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/freights/new.0" for 127.0.0.1 at 2018-05-28 16:28:55 -0300
+Processing by FreightsController#new as 
+  Rendering freights/new.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/new.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 75ms (Views: 64.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:29:04 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 74ms (Views: 40.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/freights/new.0" for 127.0.0.1 at 2018-05-28 16:29:08 -0300
+Processing by FreightsController#new as 
+  Rendering freights/new.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 57ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/freights" for 127.0.0.1 at 2018-05-28 16:29:21 -0300
+Processing by FreightsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qVClZCL8o67tnqNB4muxdZnUXK1WaOOZWRy11oDGF+wmLkG0TsttEc+rK/UY1hZKzj97p59f1cuRGuaoDgCocw==", "freight"=>{"truck_id"=>"4", "date_freight"=>"2018-05-28", "value_freight"=>"40000", "value_left"=>"879797", "source_freight"=>"ghjgjghj", "destiny_freight"=>"hgjhgj"}, "commit"=>"Salvar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "freights" ("value_freight", "value_left", "date_freight", "source_freight", "destiny_freight", "truck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["value_freight", 40000.0], ["value_left", 879797.0], ["date_freight", "2018-05-28"], ["source_freight", "ghjgjghj"], ["destiny_freight", "hgjhgj"], ["truck_id", 4], ["created_at", "2018-05-28 19:29:21.952092"], ["updated_at", "2018-05-28 19:29:21.952092"]]
+  [1m[35m (140.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/24
+Completed 302 Found in 150ms (ActiveRecord: 142.1ms)
+
+
+Started GET "/freights/24" for 127.0.0.1 at 2018-05-28 16:29:22 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 47ms (Views: 31.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/freights/24/edit" for 127.0.0.1 at 2018-05-28 16:29:32 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  Rendered freights/edit.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights/24" for 127.0.0.1 at 2018-05-28 16:29:38 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:29:39 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 73ms (Views: 39.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/freights/24/edit" for 127.0.0.1 at 2018-05-28 16:29:47 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  Rendered freights/edit.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights/24/edit" for 127.0.0.1 at 2018-05-28 16:30:21 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:30:26 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 78ms (Views: 45.8ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/freights/24" for 127.0.0.1 at 2018-05-28 16:30:34 -0300
+Processing by FreightsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OBgKeBbz2IKIdW/5duO0FD2N0vkJVQNWkcO6/17IKpm3Zu6oesQWPapA502MXhMramb188BiNQRZxemB0A6VBg==", "freight"=>{"truck_id"=>"1", "date_freight"=>"2018-05-28", "value_freight"=>"40000.0", "value_left"=>"879797.0", "source_freight"=>"ghjgjghj", "destiny_freight"=>"hgjhgj"}, "commit"=>"Atualizar", "id"=>"24"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (6.8ms)[0m  [1m[33mUPDATE "freights" SET "truck_id" = ?, "updated_at" = ? WHERE "freights"."id" = ?[0m  [["truck_id", 1], ["updated_at", "2018-05-28 19:30:34.445504"], ["id", 24]]
+  [1m[35m (123.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/24
+Completed 302 Found in 143ms (ActiveRecord: 131.1ms)
+
+
+Started GET "/freights/24" for 127.0.0.1 at 2018-05-28 16:30:34 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:30:37 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 83ms (Views: 46.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/freights/2/edit" for 127.0.0.1 at 2018-05-28 16:31:05 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/edit.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/freights/2/edit" for 127.0.0.1 at 2018-05-28 16:32:10 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/edit.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/freights/24/edit" for 127.0.0.1 at 2018-05-28 16:32:16 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/edit.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 45ms (Views: 41.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:32:18 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.6ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 87ms (Views: 52.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/freights/2/edit" for 127.0.0.1 at 2018-05-28 16:32:22 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/edit.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 79ms (Views: 74.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/freights/14/edit" for 127.0.0.1 at 2018-05-28 16:32:30 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/edit.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 47ms (Views: 43.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/freights/15/edit" for 127.0.0.1 at 2018-05-28 16:32:34 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/edit.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 54ms (Views: 50.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/freights/15/edit" for 127.0.0.1 at 2018-05-28 16:33:01 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/edit.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:33:03 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.7ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.4ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 84ms (Views: 44.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/freights/new.0" for 127.0.0.1 at 2018-05-28 16:33:08 -0300
+Processing by FreightsController#new as 
+  Rendering freights/new.html.erb within layouts/application
+  Rendered freights/new.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/juliocesar/Documentos/projetos/horizonte/app/views/freights/new.html.erb:49: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/freights/new.html.erb:49: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.1ms)
+Started GET "/freights/new.0" for 127.0.0.1 at 2018-05-28 16:34:07 -0300
+Processing by FreightsController#new as 
+  Rendering freights/new.html.erb within layouts/application
+  [1m[36mTruck Load (0.5ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 59ms (Views: 51.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/freights" for 127.0.0.1 at 2018-05-28 16:34:30 -0300
+Processing by FreightsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zdJLs1PtsBNEd7jjIbqcdwN5is8tCs1kZhorLyZnLbZCrK9jP9p+rGZCMFfbBztIVJKtxeQ9+zauHHhRqKGSKQ==", "freight"=>{"truck_id"=>"4", "date_freight"=>"2018-05-02", "value_freight"=>"567575675", "value_left"=>"657657575", "source_freight"=>"hfghfgjfjfgj", "destiny_freight"=>"fgjfjfgjfjgfjgfj"}, "commit"=>"Salvar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (6.3ms)[0m  [1m[32mINSERT INTO "freights" ("value_freight", "value_left", "date_freight", "source_freight", "destiny_freight", "truck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["value_freight", 567575675.0], ["value_left", 657657575.0], ["date_freight", "2018-05-02"], ["source_freight", "hfghfgjfjfgj"], ["destiny_freight", "fgjfjfgjfjgfjgfj"], ["truck_id", 4], ["created_at", "2018-05-28 19:34:30.704335"], ["updated_at", "2018-05-28 19:34:30.704335"]]
+  [1m[35m (279.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/25
+Completed 302 Found in 295ms (ActiveRecord: 286.4ms)
+
+
+Started GET "/freights/25" for 127.0.0.1 at 2018-05-28 16:34:30 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mFreight Load (0.3ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 30.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:34:36 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 73ms (Views: 38.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/freights/25" for 127.0.0.1 at 2018-05-28 16:34:48 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  Rendered freights/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/freights/2" for 127.0.0.1 at 2018-05-28 16:35:38 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered freights/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/freights/new.0" for 127.0.0.1 at 2018-05-28 16:38:46 -0300
+Processing by FreightsController#new as 
+  Rendering freights/new.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/_form.html.erb (6.0ms)
+  Rendered freights/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 59ms (Views: 53.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/freights" for 127.0.0.1 at 2018-05-28 16:39:01 -0300
+Processing by FreightsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GT5Awd6F1Q8/rNE+TUA/c3JDxuDRgXfSMum1q50WaDOWQKQRsrIbsB2ZWYq3/ZhMJajh6hi2QYD67+bVE9DXrA==", "freight"=>{"truck_id"=>"4", "date_freight"=>"2018-05-21", "value_freight"=>"4363643", "value_left"=>"5435346", "source_freight"=>"ggergergr", "destiny_freight"=>"eg"}, "commit"=>"Salvar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "freights" ("value_freight", "value_left", "date_freight", "source_freight", "destiny_freight", "truck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["value_freight", 4363643.0], ["value_left", 5435346.0], ["date_freight", "2018-05-21"], ["source_freight", "ggergergr"], ["destiny_freight", "eg"], ["truck_id", 4], ["created_at", "2018-05-28 19:39:01.148785"], ["updated_at", "2018-05-28 19:39:01.148785"]]
+  [1m[35m (278.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/26
+Completed 302 Found in 287ms (ActiveRecord: 279.6ms)
+
+
+Started GET "/freights/26" for 127.0.0.1 at 2018-05-28 16:39:01 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered freights/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:39:03 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 72ms (Views: 39.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/freights/2/edit" for 127.0.0.1 at 2018-05-28 16:39:39 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/_form.html.erb (6.4ms)
+  Rendered freights/edit.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/freights/10/edit" for 127.0.0.1 at 2018-05-28 16:39:44 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/_form.html.erb (9.4ms)
+  Rendered freights/edit.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 47ms (Views: 43.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/freights/10/edit" for 127.0.0.1 at 2018-05-28 16:40:07 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/_form.html.erb (7.1ms)
+  Rendered freights/edit.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:40:09 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 70ms (Views: 40.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/freights/2/edit" for 127.0.0.1 at 2018-05-28 16:40:11 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/_form.html.erb (8.5ms)
+  Rendered freights/edit.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 44ms (Views: 40.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/freights/2/edit" for 127.0.0.1 at 2018-05-28 16:40:27 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/_form.html.erb (6.1ms)
+  Rendered freights/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:40:29 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 66ms (Views: 37.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/freights/23/edit" for 127.0.0.1 at 2018-05-28 16:40:31 -0300
+Processing by FreightsController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mFreight Load (0.2ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  Rendering freights/edit.html.erb within layouts/application
+  [1m[36mTruck Load (0.4ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/_form.html.erb (7.4ms)
+  Rendered freights/edit.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:41:16 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.6ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 90ms (Views: 50.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/freights/new.0" for 127.0.0.1 at 2018-05-28 16:41:37 -0300
+Processing by FreightsController#new as 
+  Rendering freights/new.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/_form.html.erb (5.7ms)
+  Rendered freights/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 55ms (Views: 49.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/freights/new.0" for 127.0.0.1 at 2018-05-28 16:41:39 -0300
+Processing by FreightsController#new as 
+  Rendering freights/new.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/_form.html.erb (11.1ms)
+  Rendered freights/new.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 65ms (Views: 58.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/freights" for 127.0.0.1 at 2018-05-28 16:41:51 -0300
+Processing by FreightsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uKqLp4pzOYrozpunN3TtXi1sogqb8XbX/N/XDXJFkqk31G935kT3Ncr7ExPNyUpheoeFAFLGQIU02YRz/IMtNg==", "freight"=>{"truck_id"=>"3", "date_freight"=>"2018-05-28", "value_freight"=>"57647", "value_left"=>"474764", "source_freight"=>"hdhdh", "destiny_freight"=>"heher"}, "commit"=>"Salvar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "freights" ("value_freight", "value_left", "date_freight", "source_freight", "destiny_freight", "truck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["value_freight", 57647.0], ["value_left", 474764.0], ["date_freight", "2018-05-28"], ["source_freight", "hdhdh"], ["destiny_freight", "heher"], ["truck_id", 3], ["created_at", "2018-05-28 19:41:51.141955"], ["updated_at", "2018-05-28 19:41:51.141955"]]
+  [1m[35m (260.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/freights/27
+Completed 302 Found in 270ms (ActiveRecord: 261.6ms)
+
+
+Started GET "/freights/27" for 127.0.0.1 at 2018-05-28 16:41:51 -0300
+Processing by FreightsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mFreight Load (0.1ms)[0m  [1m[34mSELECT  "freights".* FROM "freights" WHERE "freights"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering freights/show.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered freights/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:41:54 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.6ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 84ms (Views: 42.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:43:34 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.9ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 76ms (Views: 39.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:43:35 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.9ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 76ms (Views: 43.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:43:35 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 74ms (Views: 40.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:43:35 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (13.1ms)
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:43:35 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 92ms (Views: 56.4ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 83ms (Views: 40.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:43:46 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 78ms (Views: 41.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:44:04 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 68ms (Views: 37.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:44:46 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.4ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 70ms (Views: 39.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:44:47 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.6ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 67ms (Views: 37.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:45:08 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 68ms (Views: 37.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:45:11 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 83ms (Views: 39.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:45:12 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.7ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.4ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 87ms (Views: 47.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:45:12 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.7ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 82ms (Views: 42.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:45:13 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.3ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 80ms (Views: 46.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:45:19 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 80ms (Views: 38.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:45:20 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 70ms (Views: 38.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:45:20 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.5ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 89ms (Views: 40.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:45:31 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (1.2ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 72ms (Views: 39.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/freights" for 127.0.0.1 at 2018-05-28 16:45:31 -0300
+Processing by FreightsController#index as HTML
+  [1m[36mFreight Load (0.8ms)[0m  [1m[34mSELECT "freights".* FROM "freights"[0m
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTruck Load (0.1ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "trucks".* FROM "trucks" WHERE "trucks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering freights/index.html.erb within layouts/application
+  [1m[36mTruck Load (0.2ms)[0m  [1m[34mSELECT "trucks".* FROM "trucks"[0m
+  Rendered freights/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 83ms (Views: 40.9ms | ActiveRecord: 2.1ms)
+
+

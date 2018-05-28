@@ -1,5 +1,11 @@
 <h1> Frete nº <%= @freight.id%> </h1>
 <hr/>
+
+<p>
+  <strong>Caminhão:</strong>
+  <%= @freight.truck.plate %>
+</p>
+
 <p>
   <strong>DATA:</strong>
   <%= I18n.l(@freight.date_freight) %>

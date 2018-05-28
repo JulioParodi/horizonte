@@ -1,49 +1,6 @@
 
 <h1>Novo frete </h1>
 
-<hr/>
+<%= render 'form', freight: @freight %> 
 
-<%=  form_for @freight, url: freights_path do |form| %>
-
-<% if @freight.truck_id?%>
-<%= form.hidden_field :truck_id , value: @freight.truck_id %>
-<% else%>
-<p>
-  <strong>Caminhão </strong> <br>
-  <%= collection_select(:freight, :truck_id, Truck.all, :id,:plate, {required: true,value:nil, selected: nil})%>
-
-</p>
-<%end%>
-<p>
- <% form.label :date_freight %> <strong> Data <strong><br>
- <%= form.date_field :date_freight, max: Date.today, required: true %>
-</p>
-
-
- <p>
-   <% form.label :value_freight %> <strong> Valor do frete <strong> <br>
-   <%= form.number_field :value_freight,required: true %>
- </p>
-
- <p>
-   <% form.label :value_left %> <strong> Valor restante <strong><br>
-   <%= form.number_field :value_left ,required: true %>
- </p>
-
- <p>
-   <% form.label :source_freight %> <strong> Origem do frete <strong> <br>
-   <%= form.text_field :source_freight, required: true %>
- </p>
-
- <p>
-   <% form.label :destiny_freight %> <strong> Destino do frete <strong><br>
-   <%= form.text_field :destiny_freight,required: true %>
- </p>
-
-
- <p>
-   <%= form.submit value: 'Salvar' %>
- </p>
-<% end %>
-<br/>
 <%= link_to 'Voltar', :back, class: "btn btn-default" %>
